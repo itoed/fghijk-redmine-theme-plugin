@@ -14,7 +14,10 @@
     <packaging>rpm</packaging>
 
     <name>fghijk-redmine-theme-plugin</name>
-    <description>An RPM package</description>
+    <description>
+        The FGHIJK Redmine Theme Plugin provides stylesheets and a custom layout
+        for the FGHIJK Redmine installation.
+    </description>
 
     <properties>
         <rpm.version>0.1</rpm.version>
@@ -27,6 +30,17 @@
         <resources>
             <resource>
                 <directory>src/main/rpmbuild</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>SOURCES/plugin/init.rb</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/rpmbuild</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>SOURCES/plugin/init.rb</include>
+                </includes>
             </resource>
         </resources>
         <plugins>
