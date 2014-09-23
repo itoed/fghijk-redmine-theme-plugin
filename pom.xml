@@ -10,7 +10,7 @@
 
     <groupId>net.fghijk.rpms</groupId>
     <artifactId>fghijk-redmine-theme-plugin</artifactId>
-    <version>0.1-1</version>
+    <version>0.1-2</version>
     <packaging>rpm</packaging>
 
     <name>fghijk-redmine-theme-plugin</name>
@@ -21,7 +21,7 @@
 
     <properties>
         <rpm.version>0.1</rpm.version>
-        <rpm.release>1</rpm.release>
+        <rpm.release>2</rpm.release>
         <rpm.arch>noarch</rpm.arch>
     </properties>
 
