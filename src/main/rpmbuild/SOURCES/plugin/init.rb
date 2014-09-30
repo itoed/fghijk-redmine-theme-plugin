@@ -10,5 +10,5 @@ Redmine::Plugin.register :fghijk_redmine_theme_plugin do
   delete_menu_item :top_menu, :help
   menu :top_menu, :sources, 'https://gitlab.fghijk.net/public', :html => { 'target' => '_blank' }
   menu :top_menu, :builds, 'http://jenkins.fghijk.net', :html => { 'target' => '_blank' }
-  menu :top_menu, :artifacts, 'http://nexus.fghijk.net', :html => { 'target' => '_blank' }
+  menu :top_menu, :artifacts, 'http://nexus.fghijk.local/index.html#view-repositories', :html => { 'target' => '_blank' }
 end
